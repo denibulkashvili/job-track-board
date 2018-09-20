@@ -15,7 +15,7 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.get('http://localhost:8000')
 
         # Visitor sees a page title and header mention job-track-board
-        self.assertIn('JobTrackBoard', self.browser.title)
+        self.assertIn('Job Track Board', self.browser.title)
         self.fail('Finish the test!')
 
         # Visitor sees an option to add a job position
