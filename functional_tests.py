@@ -40,7 +40,8 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr') # Selenium return several elements with tag 'tr'
         self.assertTrue(
-            any(row.text == "Python Developer" for row in rows)
+            any(row.text == "1. Python Developer" for row in rows),
+            "New job position did not appear in table"
         )
     
         # other user stories
